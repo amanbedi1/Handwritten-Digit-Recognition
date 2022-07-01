@@ -30,7 +30,4 @@ def predictDigit(image):
     #Predicting the image using our Model
     res=model.predict(image)
 
-    print("Predicted Digit is: ",np.argmax(res)," with confidence of: ",max(res[0])*100)
-
-
-
+    print("Predicted Digit is: ",np.argmax(res))
